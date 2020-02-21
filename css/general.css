@@ -1,0 +1,152 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body{
+  color: #FFFFFF;
+}
+#wrapper{
+  padding: 0;
+  overflow: hidden;
+}
+.hintergrund{
+  display: block;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+  opacity: .9;
+}
+
+/* SPACE */
+.space--top{
+  margin-top: 20px;
+}
+.space--top-double{
+  margin-top: 40px;
+}
+.space--top-triple{
+  margin-top: 60px;
+}
+.space--bottom{
+  margin-bottom: 20px;
+}
+.space--bottom-double{
+  margin-bottom: 40px;
+}
+.space--bottom-triple{
+  margin-bottom: 60px;
+}
+.space--right{
+  padding-right: 20px;
+}
+.space--left{
+  padding-left: 20px;
+}
+.space{
+  padding: 0 20px;
+}
+.space--padding{
+  padding: 20px;
+}
+/* Constrain */
+.constrain{
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+.constrain--large{
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+.constrain--medium{
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+.constrain--max{
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+@media only screen and (min-width: 1024px){
+  .constrain--large{
+    padding: 70px 20px;
+  }
+  .constrain--max{
+    padding: 50px 20px;
+  }
+  .space--desk{
+    padding: 0 20px;
+  }
+}
+.white{
+  background-color: #fff;
+}
+.gray{
+  background-color: #434343;
+}
+.white-special{
+  background-color: rgba(255, 255, 255, 0.95);
+}
+.gray-special{
+  background-color: rgba(87, 87, 87, 0.40);
+}
+.icon__vorteil, .icon__pay{
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+.icon__pay{
+  width: 150px;
+  height: 55px;
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+.pull--left{
+  margin-left: 0 !important;
+  margin-right: auto;
+}
+.pull--right{
+  margin-right: 0 !important;
+  margin-left: auto;
+}
+.pull--center{
+  margin: 0 auto !important;
+}
+.logo__titel{
+  position: relative;
+  display: inline-block;
+}
+.logo__titel:before{
+  display: block;
+  content: '';
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  left: -42px;
+  transform: translateY(-50%);
+  background-image: url('../icons/logo-footer.svg');
+}
+@media only screen and (min-width: 1024px){
+  .logo__titel:before{
+    width: 75px;
+    height: 75px;
+    left: -90px
+  }
+}
